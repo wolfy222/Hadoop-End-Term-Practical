@@ -21,8 +21,8 @@ public class MyDriver {
 		Configuration conf = new Configuration();
 		Job j = new Job(conf, "Prime Sum");
 		j.setJarByClass(MyDriver.class);
-		j.setMapperClass(MyMapper.class);
-		j.setReducerClass(MyReducer.class);
+		j.setMapperClass(PrimeMapper.class);
+		j.setReducerClass(PrimeReducer.class);
 		j.setMapOutputKeyClass(Text.class);
 		j.setMapOutputValueClass(IntWritable.class);
 
